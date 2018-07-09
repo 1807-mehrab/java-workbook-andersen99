@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Command{
 	ArrayList<String> comList;
 	public Command() {
-		comList = new ArrayList();
+		comList = new ArrayList<String>();
 		comList.add("withdraw");
 		comList.add("deposit");
 		comList.add("quit");
