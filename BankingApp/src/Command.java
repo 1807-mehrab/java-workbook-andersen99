@@ -35,7 +35,7 @@ public class Command{
 						if (!isInvalid)isInvalid = newSession.withdraw(userAccount, amount);
 					}
 					catch(NumberFormatException e) {
-						System.out.println("Please enter a number with no letters or symbols");
+						System.out.println("Please enter a number with no letters or symbols other than '.'");
 						isInvalid = true;
 					}
 				}while(isInvalid);
@@ -49,7 +49,7 @@ public class Command{
 						newSession.deposit(userAccount, amount);
 					}
 					catch(NumberFormatException e) {
-						System.out.println("Please enter a number with no letters or symbols other than");
+						System.out.println("Please enter a number with no letters or symbols other than '.'");
 						isInvalid = true;
 					}
 				}while(isInvalid);					
